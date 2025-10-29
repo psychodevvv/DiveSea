@@ -1,0 +1,279 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 96px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.left-header>img {
+    cursor: pointer;
+}
+
+.left-header>a {
+    font-family: 'Inter', sans-serif;
+    color: rgb(133, 133, 133);
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.5s all ease;
+}
+
+.left-header>a:hover {
+    color: white;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding: 18px 82px 18px 24px;
+    border-radius: 15px;
+    background-color: rgb(24, 24, 24);
+}
+
+.search>img {
+    width: 22px;
+    height: 22px;
+}
+
+.search>input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 300px;
+}
+
+.right-header>a {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.5s all ease;
+    padding: 17px 25px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.right-header>a:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.342);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 111px;
+    margin-bottom: 235px;
+}
+
+.left-hero {
+    margin-left: 96px;
+}
+
+.left-hero>h1 {
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+.left-hero>p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(180, 180, 180);
+    margin-bottom: 45px;
+    line-height: 28px;
+}
+
+.left-hero>p>span {
+    color: white;
+    font-weight: 600;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 23px;
+    margin-bottom: 85px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.left-button {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 18px 30px;
+    border-radius: 13px;
+    background-color: white;
+    color: black;
+    transition: 0.2s all ease;
+}
+
+.right-button {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 18px 21px;
+    border-radius: 13px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s all ease;
+} 
+
+.left-button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.right-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.hero-info {
+    display: flex;
+    gap: 65px;
+}
+
+.weekly-section {
+    margin-bottom: 150px;
+}
+
+.weekly-section>h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 45px;
+    color: #C5C5C5;
+    margin-bottom: 100px;
+}
+
+.weekly-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.date {
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    right: 23px;
+    top: 28px;
+    background-color: #1C1D2059;
+    border: 1.18px solid #1C1D2014;
+    backdrop-filter: blur(4.705041408538818px);
+    box-shadow: 0px 4.71px 14.12px 0px #1C1D2014;
+    border-radius: 10px;
+    padding: 9px 15px;
+}
+
+.card {
+    position: relative;
+    padding: 14px 14px 20px 14px;
+    border-radius: 24px;
+    box-shadow: 0 0 50px #c7c7c777;
+    transition: 0.3s all ease;
+}
+
+.nft-title {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 21.17px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.price-bid>h1 {
+    font-weight: 400;
+    font-size: 14.12px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.card-button {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px 26px;
+    transition: 0.2s all ease;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.card-button>a {
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.card-button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.card-button:hover>a {
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 70px #c7c7c7b0;
+}
