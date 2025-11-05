@@ -1,0 +1,23 @@
+:root {
+  --bg: #f7fbff;
+  --text: #0b1b2b;
+  --muted: #7b8894;
+  --accent: #0ea5ff;
+  --card-bg: #ffffff;
+  --shadow: 0 10px 40px rgba(6, 30, 60, 0.06);
+  --glass: rgba(255,255,255,0.6);
+  --contrast: 1.03;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: var(--text);
+  transition: background 350ms ease, color 250ms ease;
+}
+
+.card:hover, .collection-item:hover {
+  transform: translateY(-8px) scale(1.01);
+  transition: transform 220ms ease;
+}
+
+.left-button, .card-button { background: var(--accent); color: white; border-color: var(--accent); }

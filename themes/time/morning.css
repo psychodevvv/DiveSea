@@ -1,0 +1,30 @@
+:root {
+  --bg: #fffaf6;
+  --text: #102027;
+  --muted: #6b6b6b;
+  --accent: #ffb86b;
+  --card-bg: #ffffff;
+  --shadow: 0 6px 30px rgba(18, 25, 32, 0.06);
+  --glass: rgba(255,255,255,0.7);
+  --contrast: 0.98;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg) 0%, #fffefc 100%);
+  color: var(--text);
+  transition: background 400ms ease, color 300ms ease;
+  filter: contrast(var(--contrast));
+}
+
+.card, .collection-item {
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  border-radius: 18px;
+}
+
+.left-button, .card-button, .startleft-button {
+  background: var(--accent);
+  color: #102027;
+  border-color: var(--accent);
+  transition: transform 180ms ease;
+}

@@ -1,0 +1,16 @@
+:root {
+  --m-font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --m-accent: #9ad3bc;
+  --m-anim-speed: 6s;
+  --m-shadow-soft: 0 8px 40px rgba(26,43,34,0.06);
+}
+
+@keyframes gentle-breath {
+  0% { transform: translateY(0) scale(1); filter: saturate(0.98); }
+  50% { transform: translateY(-4px) scale(1.002); filter: saturate(1.01); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+body { font-family: var(--m-font); transition: all 300ms ease; }
+.hero, .startnft-back { animation: gentle-breath var(--m-anim-speed) ease-in-out infinite; }
+.left-button, .card-button { border-radius: 14px; box-shadow: var(--m-shadow-soft); background: var(--m-accent); color: #022; }
